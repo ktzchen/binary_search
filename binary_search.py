@@ -35,7 +35,7 @@ def find_smallest_positive(xs):
         mid = (left + right) // 2
         if left == right:
             if xs[left] == 0:
-                return xs.index(xs[left+1])
+                return xs.index(xs[left + 1])
             elif xs[left] < 0:
                 return None
             else:
@@ -48,7 +48,7 @@ def find_smallest_positive(xs):
             return xs.index(xs[mid + 1])
         return go(left, right)
 
-    return go(0, len(xs)-1)
+    return go(0, len(xs) - 1)
 
 
 def count_repeats(xs, x):
